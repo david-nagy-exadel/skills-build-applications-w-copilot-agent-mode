@@ -7,7 +7,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         User = get_user_model()
-        # Delete existing data
+    # Delete existing data
         User.objects.all().delete()
         Team.objects.all().delete()
         Activity.objects.all().delete()
