@@ -1,8 +1,7 @@
-
-from django.urls import path, include
 from django.contrib import admin
-from .views import api_root, router
+from django.urls import path, include
 import os
+from .views import api_root, router
 
 codespace_name = os.environ.get('CODESPACE_NAME')
 if codespace_name:
